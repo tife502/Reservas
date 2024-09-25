@@ -1,0 +1,109 @@
+.reservar-espacio {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+}
+
+.reservar-espacio h1 {
+    text-align: center;
+}
+
+.reservar-espacio select,
+.reservar-espacio input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.reservar-espacio button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.reservar-espacio button:hover {
+    background-color: #0056b3;
+}
+
+.mensaje {
+    color: green;
+    text-align: center;
+}
+
+.reservar-espacio {
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.formulario-reserva {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+select,
+input,
+button {
+    margin: 5px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:disabled {
+    background-color: #6c757d;
+}
+
+.reservas-creadas,
+.reservas-ocupadas {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+.reserva-item,
+.reserva-item-ocupada {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.reserva-item:last-child,
+.reserva-item-ocupada:last-child {
+    border-bottom: none;
+}
+
+.reserva-item-ocupada {
+    background-color: #f8d7da;
+}
+
+.reserva-item span {
+    flex: 1;
+    text-align: left;
+}

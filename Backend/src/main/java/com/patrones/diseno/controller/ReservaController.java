@@ -25,7 +25,7 @@ public class ReservaController {
                                 @RequestParam LocalTime horaInicio,
                                 @RequestParam LocalTime horaFin) {
         return reservaService.crearReserva(usuarioId, espacioId, fecha, horaInicio, horaFin);
-    }
+    }   
 
     @GetMapping
     public List<Reserva> obtenerReservas() {

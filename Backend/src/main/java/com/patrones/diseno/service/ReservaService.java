@@ -1,5 +1,6 @@
 package com.patrones.diseno.service;
 
+import com.patrones.diseno.patrones.ReservaFactory;
 import com.patrones.diseno.model.Espacio;
 import com.patrones.diseno.model.Reserva;
 import com.patrones.diseno.model.Usuario;
@@ -36,12 +37,8 @@ public class ReservaService {
             throw new RuntimeException("El espacio no está disponible");
         }
 
-        Reserva reserva = new Reserva();
-        reserva.setUsuario(usuario);
-        reserva.setEspacio(espacio);
-        reserva.setFecha(fecha);
-        reserva.setHoraInicio(horaInicio);
-        reserva.setHoraFin(horaFin);
+        Reserva reserva = ReservaFactory.crearReserva(usuario, espacio, fecha, horaInicio, horaFin);
+
 
         return reservaRepository.save(reserva);
     }

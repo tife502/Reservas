@@ -7,7 +7,7 @@ import com.patrones.diseno.model.Usuario;
 import java.time.LocalDate;
 import java.time.LocalTime;
 
-
+//Comentario
 public class ReservaFactory {
 
     public static Reserva crearReserva(Usuario usuario, Espacio espacio, LocalDate fecha, LocalTime horaInicio, LocalTime horaFin) {

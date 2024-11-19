@@ -39,7 +39,7 @@ public class ReservaService {
 
         Reserva reserva = ReservaFactory.crearReserva(usuario, espacio, fecha, horaInicio, horaFin);
 
-
+//ComentarioX2
         return reservaRepository.save(reserva);
     }
 
